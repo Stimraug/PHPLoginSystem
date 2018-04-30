@@ -23,8 +23,8 @@
 	<!-- Below code copied from https://getuikit.com/docs/form#layout and modified-->
 		<div class="uk-section uk-container">
 			<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
-					<form class="uk-form-stacked js-login">
-					<h2>Login</h2>
+					<form class="uk-form-stacked js-register">
+					<h2>Register</h2>
 					<div class="uk-margin">
 						<label class="uk-form-label" for="form-stacked-text">Username</label>
 						<div class="uk-form-controls">
@@ -40,8 +40,14 @@
 					</div>
 					
 					<div class="uk-margin">
-						<button class="uk-button uk-button-default" type="submit">Login</button>
-						<button class="uk-button uk-button-default" type="register">Register</button>
+						<label class="uk-form-label" for="form-stacked-text">Re-type password</label>
+						<div class="uk-form-controls">
+							<input class="uk-input" id="retype_password-stacked-text" type="retype_password" required='required' placeholder="yourburdens">
+						</div>
+					</div>
+					
+					<div class="uk-margin">
+						<button class="uk-button uk-button-default" type="submit">Register</button>
 					</div>
 
 				</form>
