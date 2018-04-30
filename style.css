@@ -1,0 +1,62 @@
+#Linkit {
+	font-family: Georgia, "Times New Roman";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 10px;
+}
+
+head {
+	font-family: Rockwell, "Times New Roman";
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16.4px;
+}
+
+h1 {
+	font-family: Rockwell, "Times New Roman", Georgia;
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16.4px;
+}
+
+h2 {
+	font-family: Rockwell, "Times New Roman", Georgia;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 14.4px;
+}
+
+p {
+	font-family: Georgia, "Times New Roman";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 10px;
+}
+
+body {
+	font-family: Georgia, "Times New Roman";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 10px;
+}
+
+.frontPageSlides {
+	border-style: outset;
+	border-width: 2px;
+	border-color: gray;
+	padding: 7px;
+}
