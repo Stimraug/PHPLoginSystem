@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-		<head>
+<html lang="en">
+	<head>
 		<!-- Meta settings -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,13 +30,9 @@
 			carousel();
 		*/
 		?>
-		<section id="Pictures">
-			<img class="frontPageSlides" src="Pictures/Atlas.jpg" style="width:172px;height:108px">
-			<img class="frontPageSlides" src="Pictures/highlander.jpg" style="width:172px;height:108px">
-			<img class="frontPageSlides" src="Pictures/Timberwolf.jpg" style="width:172px;height:108px">
-		</section>
-
-		</head
+	</head>
+		
+		
 		<!-- Site navigation -->
 		<!-- 
 		<nav class="w3-bar w3-black">
@@ -66,12 +62,20 @@
 		}
 		-->
 	<body>
+		<section id="Pictures">
+			<h2>
+				<img alt="Atlas mech" class="frontPageSlides" src="Pictures/Atlas.jpg" style="width:172px;height:108px">
+				<img alt="Highlander mech" class="frontPageSlides" src="Pictures/highlander.jpg" style="width:172px;height:108px">
+				<img alt="Timberwolf mech" class="frontPageSlides" src="Pictures/Timberwolf.jpg" style="width:172px;height:108px">
+			</h2>
+		</section>
+		
 		<h1>Lassin kotisivut (laeejoha)</h1>
-		<div class="navLinks" id="EtusivunLinkit">
-		<h2> Linkit </h2>
-		<a href="http://users.jyu.fi/~laeejoha/aboutAuthor.php">Tietoja minusta</a> <br>
-		<a href="http://users.jyu.fi/~laeejoha/Courses">Omat tiedostot</a> <br>
-		<a href="http://users.jyu.fi/~laeejoha/PHPLoginPractice.php">PHP Practice login page</a> <br>
-		 </div>
-</body>
+		<div id="EtusivunLinkit">
+			<h2> Linkit </h2>
+			<a href="http://users.jyu.fi/~laeejoha/aboutAuthor.php">Tietoja minusta</a> <br>
+			<a href="http://users.jyu.fi/~laeejoha/Courses">Omat tiedostot</a> <br>
+			<a href="http://users.jyu.fi/~laeejoha/PHPLoginPractice.php">PHP Practice login page</a> <br>
+		</div>
+	</body>
 </html>

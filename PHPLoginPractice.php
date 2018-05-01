@@ -22,54 +22,50 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-		<title>PHP Login Practice</title>
-	
 		<base href="http://users.jyu.fi/~laeejoha/index.php" />
-		
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<title>PHP Login Practice</title>
+
     <!-- UIkit CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+
 	</head>
-	
     <body>
-	<form action="" method="post">
 	<!-- Below code copied from https://getuikit.com/docs/form#layout and modified-->
 		<div class="uk-section uk-container">
-			<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
-							<form class="uk-form-stacked">
-					<h2>Login</h2>
+			<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" >
+					<form class="uk-form-stacked" method="post">
+					<h2>Login to Haybale <img alt="Haybale" align="middle" id="haybaleLogo" src="Pictures/hay_bale.png" style="width:172px;height:108px"></h2>
 					<div class="uk-margin">
-						<label class="uk-form-label" for="form-stacked-text-username">Username</label>
+						<label class="uk-form-label" for="username-stacked-text">Username (="hii")</label>
 						<div class="uk-form-controls">
-							<input class="uk-input" id="username" type="username" required='required' 
-							placeholder="Dragonborn@whiterun.com" value="<?= $_POST["username"] ?>" name="username" />
+							<input class="uk-input" id="username-stacked-text" type="text" required='required' 
+							placeholder="Dragonborn" value="<?= $_POST["username"] ?>" name="username" />
 						</div>
 					</div>
 					
 					<div class="uk-margin">
-						<label class="uk-form-label" for="form-stacked-text">Password</label>
+						<label class="uk-form-label" for="password-stacked-text">Password (="hoo")</label>
 						<div class="uk-form-controls">
-							<input class="uk-input" id="password-stacked-text" type="password" value="" name="password" required='required' placeholder="yourburdens">
+							<input class="uk-input" id="password-stacked-text" type="text" value="" name="password" required='required' placeholder="yourburdens">
 						</div>
 					</div>
 					
 					<div class="uk-margin">
 						<button class="uk-button uk-button-default" type="submit" name="sub" >Login</button>
-						<button class="uk-button uk-button-default" type="register">Register</button>
+						<button class="uk-button uk-button-default" type="submit">Register</button>
 					</div>
 					
 				</form>
 			</div>
 		</div>
-	</form>
 		<?php require_once "inc/footer.php"; ?>
 	
 		<div class="navLinks" id="PHPSivunLinkit">
-		<a href="http://users.jyu.fi/~laeejoha/index.php">Etusivulle</a> <br>
+			<a id="PHPSivuLinkki" href="http://users.jyu.fi/~laeejoha/index.php">Etusivulle</a> <br>
 		</div>
 	
     </body>

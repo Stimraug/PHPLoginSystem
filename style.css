@@ -1,15 +1,5 @@
-#EtusivunLinkit {
-	font-family: Georgia, "Times New Roman";
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
-	padding: 10px;
-}
-
 head {
-	font-family: Rockwell, "Times New Roman";
+	font-family: Rockwell, "Times New Roman", Georgia;
 	font-size: 36px;
 	font-style: normal;
 	font-variant: normal;
@@ -54,9 +44,56 @@ body {
 	line-height: 10px;
 }
 
+label {
+	font-family: Georgia, "Times New Roman";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+input {
+	padding: 2px;
+	margin: 4px 0px;
+}
+
+button {
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 6px;
+}
+
 .frontPageSlides {
 	border-style: outset;
 	border-width: 2px;
 	border-color: gray;
 	padding: 7px;
+}
+
+#EtusivunLinkit a {
+	font-family: Georgia, "Times New Roman";
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+#PHPSivuLinkki {
+	font-family: Georgia, "Times New Roman";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+#sucLoginLogoutButton {
+	font-family: Georgia, "Times New Roman";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
