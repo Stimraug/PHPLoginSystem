@@ -10,9 +10,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-		<title>Page Title</title>
+		<title>Registering page</title>
 	
-		<base href="/" />
+		<base href="http://users.jyu.fi/~laeejoha/index.php" />
 		
     <!-- UIkit CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />

@@ -1,3 +1,52 @@
+<?php
+// Code adapted from http://us3.php.net/manual/en/function.session-create-id.php
+// My session start function support timestamp management
+function my_session_start() {
+    session_start();
+    // Do not allow to use too old session ID
+    if (!empty($_SESSION['deleted_time']) && $_SESSION['deleted_time'] < time() - 180) {
+        session_destroy();
+        session_start();
+    }
+}
+
+// My session regenerate id function
+function my_session_regenerate_id() {
+    // Call session_create_id() while session is active to 
+    // make sure collision free.
+    if (session_status() != PHP_SESSION_ACTIVE) {
+        session_start();
+    }
+    // WARNING: Never use confidential strings for prefix!
+    $newid = session_regenerate_id();
+    // Set deleted timestamp. Session data must not be deleted immediately for reasons.
+    $_SESSION["deleted_time"] = time();
+    // Finish session
+    session_write_close();
+    // Make sure to accept user defined session ID
+    // NOTE: You must enable use_strict_mode for normal operations.
+    ini_set("session.use_strict_mode", 0);
+    // Set new custome session ID
+    //session_id($newid);
+    // Start with custom session ID
+    session_start();
+}
+
+// Make sure use_strict_mode is enabled.
+// use_strict_mode is mandatory for security reasons.
+ini_set("session.use_strict_mode", 1);
+//ini_set("display_errors", 1);
+my_session_start();
+
+// Session ID must be regenerated when
+//  - User logged in
+//  - User logged out
+//  - Certain period has passed
+my_session_regenerate_id();
+
+// Write useful codes
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,30 +55,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css" >
 		<title>Lassin kotisivut</title>
-		<!-- Automatic Slideshow - this changes the image shown every 4 seconds -->
-		<!-- This code was "translated" from javascript to PHP by the website author-->
-		<?php
-		// Does not work?!
-		/*
-			$myIndex = 0;
-			
-		function carousel() {
-			$x = document.getElementsByClassName("frontPageSlides");
-
-			for ($i = 0; $i < $x.length; $i++){
-				//$x[$i].style.display = "none";
-			}
-
-			$myIndex++;
-			if ($myIndex > $x.length) {$myIndex = 1;}
-			//$x[$myIndex - 1].style.display = "block";
-			setTimeout(carousel, 4000); 
-
-		}
-
-			carousel();
-		*/
-		?>
 	</head>
 		
 		
@@ -43,24 +68,6 @@
 		</nav>
 		-->
 
-		<!-- Automatic Slideshow - this changes the image shown every 4 seconds -->
-
-		<!--
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			myIndex++;
-			if (myIndex > x.length) {myIndex = 1}
-			x[myIndex-1].style.display = "block";
-			setTimeout(carousel, 4000);
-		}
-		-->
 	<body>
 		<section id="Pictures">
 			<h2>

@@ -25,6 +25,15 @@ h2 {
 	line-height: 14.4px;
 }
 
+h3 {
+	font-family: Rockwell, "Times New Roman", Georgia;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 18px;
+}
+
 p {
 	font-family: Georgia, "Times New Roman";
 	font-size: 14px;
@@ -71,6 +80,32 @@ button {
 	padding: 7px;
 }
 
+.feedbackForm {
+	padding-top: 20px;
+	
+	font-family: Rockwell;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 10px;
+}
+
+.fbFormP {
+	font-family: Rockwell;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 8px;
+	padding: 0px;
+}
+
+.fbFormI {
+	padding: 0px;
+	margin: 0px 0px;
+}
+
 #EtusivunLinkit a {
 	font-family: Georgia, "Times New Roman";
 	font-size: 16px;
@@ -97,3 +132,4 @@ button {
 	font-weight: 400;
 	line-height: 20px;
 }
+
