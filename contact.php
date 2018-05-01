@@ -19,14 +19,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 if ($mail_status) {	 ?>
 	<script language="javascript" type="text/javascript">
 		alert("Palautteesi on lähetetty!");
-		window.location = "index.php";
+		window.location = "PHPLoginPractice.php";
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
 		alert("Palautteen lähetys epäonnistui");
-		window.location = "index.php";
+		window.location = "PHPLoginPractice.php";
 	</script>
 <?php
 }
