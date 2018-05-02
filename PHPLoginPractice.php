@@ -12,9 +12,11 @@
 	$errorMsg = "I am a helpful error message. An error has been encountered.";
 	$validUser = $_SESSION["login"] === true;
 	if(isset($_POST["sub"])) {
-		$CleanUser = array_map("strip_tags", array_map( trim($_POST["username"])));
-		$CleanPass = array_map("strip_tags", array_map( trim($_POST["password"])));
-		$validUser = $CleanUser == "hii" && $CleanPass == "hoo";
+		//$CleanUser = array_map("strip_tags", array_map( trim($_POST["username"])));
+		$CleanUser = strip_tags(trim($_POST["username"]));
+		$CleanPass = strip_tags(trim($_POST["password"]));
+		$validUser = ($CleanUser == "hii" && $CleanPass == "hoo");
+		// Ei-sanitisoitu: $validUser = $_POST["username"] == "hii" && $_POST["password"] == "hoo";
 		if(!$validUser) $errorMsg = "Invalid username or password.";
 		else $_SESSION["login"] = true;
 	}

@@ -26,8 +26,8 @@ function my_session_regenerate_id() {
     // Make sure to accept user defined session ID
     // NOTE: You must enable use_strict_mode for normal operations.
     ini_set("session.use_strict_mode", 0);
-    // Set new custome session ID
-    //session_id($newid);
+    // Set new custom session ID
+    session_id($newid);
     // Start with custom session ID
     session_start();
 }
@@ -36,7 +36,7 @@ function my_session_regenerate_id() {
 // use_strict_mode is mandatory for security reasons.
 ini_set("session.use_strict_mode", 1);
 //ini_set("display_errors", 1);
-my_session_start();
+//my_session_start();
 
 // Session ID must be regenerated when
 //  - User logged in

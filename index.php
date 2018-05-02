@@ -71,9 +71,9 @@ my_session_regenerate_id();
 	<body>
 		<section id="Pictures">
 			<h2>
-				<img alt="Atlas mech" class="frontPageSlides" src="Pictures/Atlas.jpg" style="width:172px;height:108px">
-				<img alt="Highlander mech" class="frontPageSlides" src="Pictures/highlander.jpg" style="width:172px;height:108px">
-				<img alt="Timberwolf mech" class="frontPageSlides" src="Pictures/Timberwolf.jpg" style="width:172px;height:108px">
+				<img alt="Atlas mech" class="frontPageSlides" src="Pictures/Slideshow/Atlas.jpg" style="width:172px;height:108px">
+				<img alt="Highlander mech" class="frontPageSlides" src="Pictures/Slideshow/highlander.jpg" style="width:172px;height:108px">
+				<img alt="Timberwolf mech" class="frontPageSlides" src="Pictures/Slideshow/Timberwolf.jpg" style="width:172px;height:108px">
 			</h2>
 		</section>
 		
