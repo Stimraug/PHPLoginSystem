@@ -12,8 +12,8 @@
 	$errorMsg = "I am a helpful error message. An error has been encountered.";
 	$validUser = $_SESSION["login"] === true;
 	if(isset($_POST["sub"])) {
-		$CleanUser = array_map("strip_tags", $_POST["username"]);
-		$CleanPass = array_map("strip_tags", $_POST["password"]);
+		$CleanUser = array_map("strip_tags", array_map( trim($_POST["username"])));
+		$CleanPass = array_map("strip_tags", array_map( trim($_POST["password"])));
 		$validUser = $CleanUser == "hii" && $CleanPass == "hoo";
 		if(!$validUser) $errorMsg = "Invalid username or password.";
 		else $_SESSION["login"] = true;
@@ -23,7 +23,7 @@
 	}
 	
 	// Code adapted from http://us3.php.net/manual/en/function.session-create-id.php
-// My session start function support timestamp management
+// My session start function to support timestamp management
 function my_session_start() {
     session_start();
     // Do not allow to use too old session ID
@@ -49,8 +49,8 @@ function my_session_regenerate_id() {
     // Make sure to accept user defined session ID
     // NOTE: You must enable use_strict_mode for normal operations.
     ini_set("session.use_strict_mode", 0);
-    // Set new custome session ID
-    //session_id($newid);
+    // Set new custom session ID
+    session_id($newid);
     // Start with custom session ID
     session_start();
 }
