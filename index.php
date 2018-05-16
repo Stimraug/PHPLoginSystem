@@ -83,6 +83,7 @@ my_session_regenerate_id();
 			<a href="http://users.jyu.fi/~laeejoha/aboutAuthor.php">Tietoja minusta</a> <br>
 			<a href="http://users.jyu.fi/~laeejoha/Courses">Omat tiedostot</a> <br>
 			<a href="http://users.jyu.fi/~laeejoha/PHPLoginPractice.php">PHP Practice login page</a> <br>
+			<a href="http://users.jyu.fi/~laeejoha/quizstart.php">PHP knowledge quiz</a> <br>
 		</div>
 	</body>
 </html>

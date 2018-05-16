@@ -50,6 +50,7 @@ h1 {
   text-transform: uppercase;
 }
 .index-sell { top: 155px; }
+
 .transparent {
   color: transparent;
   display: none;
@@ -116,7 +117,9 @@ h1 {
 #start-quiz {
   margin-top: 25px;
 }
+
 #quiz ul li div.quiz-overlay { margin: 0; }
+
 #quiz ul {
   list-style-type: none;
   margin-top: 0;
